@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "626813455341",
+    "project_id": "gonogo-2cbd3",
+    "storage_bucket": "gonogo-2cbd3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626813455341:android:3fa94b737dfd0eb3a8f5e4",
+        "android_client_info": {
+          "package_name": "com.example.gonogo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaKtNAwIrZccySstkUBObrp9pn9dTUo3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

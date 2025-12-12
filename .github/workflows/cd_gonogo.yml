@@ -1,0 +1,41 @@
+name: GoNoGo CD
+
+on:
+  push:
+    branches:
+      - "BugsFix"
+      - "develop"
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.x'
+          channel: 'stable'
+          cache: true
+
+      - name: Instalar Dependencias
+        run: flutter pub get
+
+      - name: Compilar APK (Release)
+        run: flutter build apk --release
+
+      - name: Firebase App Distribution
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
+        with:
+          appId: 1:626813455341:android:3fa94b737dfd0eb3a8f5e4
+          serviceCredentialsFileContent: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GONOGO }}'
+          file: build/app/outputs/flutter-apk/app-release.apk
+          groups: testadores-gonogo
