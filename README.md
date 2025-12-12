@@ -1,4 +1,4 @@
-# 🚀 GoNoGo App: Entregável Final (Revisão de Arquitetura e Gestão)
+# 🚀 GoNoGo App: Entregável final (Revisão de Arquitetura e Gestão)
 
 Este repositório contém o código-fonte final do aplicativo GoNoGo, desenvolvido com foco na arquitetura Cross-Platform e na integração com o Google Firebase.
 
@@ -27,7 +27,7 @@ O projeto utiliza o stack tecnológico moderno e escalável, garantindo eficiên
 * **Null Safety:** O código foi desenvolvido seguindo as diretrizes de *Null Safety* do Dart, utilizando explicitamente a sintaxe `?` onde valores nulos são permitidos, prevenindo erros em tempo de execução.
 * **Imutabilidade:** As classes e variáveis essenciais utilizam os modificadores `final` e `const` para garantir imutabilidade e otimização de tempo de compilação quando aplicável.
 
-## 🧑‍💻 Para Execução Local
+## 🧑‍💻 Para execução local
 
 Para rodar este projeto:
 1.  Clone o repositório: `git clone https://github.com/patriciaalsousa/Go-No-Go_app_final`
